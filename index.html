@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav_container">
+      <img class="nav_img" src="./static/img/logo.svg" />
+      <ul class="nav_options">
+        <li id="home" class="nav_option active">HOME</li>
+        <li id="likedList" class="nav_option">LIKED LIST</li>
+        <li class="nav_option">
+          <select name="options" id="mySelect">
+            <option value="popular">Popular</option>
+            <option value="now_playing">Now playing</option>
+            <option value="top_rated">Top rated</option>
+            <option value="up_coming">Up coming</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="movies_container">
+      <!-- <div class="movie_card">
+        <img
+          src="https://image.tmdb.org/t/p/w500/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+        />
+        <div class="movie_name_container">The Little Mermaid</div>
+        <div class="movie_rating_container">
+          <div class="rating_container">
+            <i class="icon ion-md-star rating-icon"></i>
+            <span>5.7</span>
+          </div>
+          <i class="like-icon icon ion-md-heart-empty"></i>
+        </div>
+      </div> -->
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImg" src=""/>
+        <div class="movie_detail_container">
+          <span id="modalTitle">Title</span>
+          <span>Overview</span>
+          <p id="modalOverview">
+            Overview here
+          </p>
+          <span>Rating</span>
+          <p id="modalRating">Rating</p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./main.js" async></script>
+  </body>
+</html>
